@@ -7,7 +7,7 @@ metadata:
   tier: db
 spec:
  containers:
-  - image: srikanthhg/mongo:v1
+  - image: srikanthhg/mongodb:k8
     name: mydb
     imagePullPolicy: Always
     resources:
@@ -21,7 +21,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
- name: mongodb
+ name: mongodb-service
 spec:
  selector:
   tier: db
