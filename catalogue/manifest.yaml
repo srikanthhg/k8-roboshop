@@ -7,7 +7,7 @@ metadata:
   tier: backend
 spec:
  containers:
-  - image: srikanthhg/catalogue:v1
+  - image: srikanthhg/catalogue:k8
     name: catalogueimage
     resources:
      requests:
